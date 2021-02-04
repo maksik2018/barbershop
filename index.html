@@ -4,9 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
+    <link rel="stylesheet" href="./modern-normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./variables.css"> -->
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav>
         <a href="#">
           <img src="./images/logo1.png" alt="img" />
@@ -15,7 +23,7 @@
           <li><a href="#about">О нас</a></li>
           <li><a href="#">Услуги и цены</a></li>
           <li><a href="#">Мастера</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="#contacts">Контакты</a></li>
         </ul>
         <ul>
           <li><a href="tel:+380444491122">+38 044 449 11 22</a></li>
@@ -30,13 +38,13 @@
     <main>
       <section>
         <p>A hair salon for men in Kyiv</p>
-        <h1>Barbershop</h1>
+        <h1 class="title">Barbershop</h1>
         <p>
           Мы эксперты в модных мужских стрижках Работаем быстро, осторожно и со
           вкусом.
         </p>
-        <button>назад</button>
-        <button>вперед</button>
+        <button class="hero-btn">назад</button>
+        <button class="hero-btn">вперед</button>
       </section>
       <section id="about">
         <ul>
@@ -49,7 +57,7 @@
         </ul>
         <div>
           <p>О НАС</p>
-          <h2>
+          <h2 class="title">
             Лучший Барбершоп<br />
             твоего города
           </h2>
@@ -68,7 +76,7 @@
       </section>
       <section>
         <p>Проведи время в компании лучших мастеров</p>
-        <h2>Услуги и цены</h2>
+        <h2 class="title">Услуги и цены</h2>
         <table>
           <tr>
             <td>Мужская стрижка</td>
@@ -126,7 +134,7 @@
         </ul>
         <div>
           <p>старая традиционная школа</p>
-          <h2>Почему приходят именно к нам?</h2>
+          <h2 class="title">Почему приходят именно к нам?</h2>
           <p>
             О нас говорят только хорошее. Но лучше 1 раз увидеть и
             прочувствовать, чем 10 раз прочитать.
@@ -135,7 +143,7 @@
       </section>
       <section>
         <p>для настоящих ценителей атмосферы</p>
-        <h2>Наши мастера</h2>
+        <h2 class="title">Наши мастера</h2>
         <ul>
           <li>
             <img src="./images/master1.png" alt="master 1" width="346" />
@@ -221,7 +229,7 @@
         </ul>
       </section>
       <section>
-        <h2>фото</h2>
+        <!-- <h2 class="title">фото</h2> -->
         <p>На латинском языке “барба” означает “борода”</p>
         <ul>
           <li>
@@ -240,7 +248,7 @@
       </section>
       <section>
         <div>
-          <h2 id="app">Онлайн-запись</h2>
+          <h2 class="title" id="app">Онлайн-запись</h2>
           <!-- <form>
             <input type="text" placeholder="Имя*" />
             <input type="tel" placeholder="Телефон*" />
@@ -248,14 +256,14 @@
             <button>отправить</button>
           </form> -->
           <form>
-            <input type="text" name="name" id="name">
-            <input type="tel" name="tel" id="tel">
-            <textarea name="msg" id="" cols="30" rows="10"></textarea>
+            <input type="text" name="name" id="name" />
+            <input type="tel" name="tel" id="tel" />
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
             <button>отправить</button>
           </form>
         </div>
-        <div>
-          <h2>Контакты</h2>
+        <div id="contacts">
+          <h2 class="title">Контакты</h2>
 
           <address>
             <a href="#"
